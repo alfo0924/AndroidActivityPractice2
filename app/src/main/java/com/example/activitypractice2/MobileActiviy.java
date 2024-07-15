@@ -30,9 +30,11 @@ public class MobileActiviy extends AppCompatActivity {
         {
             String mobile =String.format(bundle.getString("mobile"));
 
+            //set the textName
             TextView name=(TextView) findViewById(R.id.textView);
             name.setText(mobile);
 
+            //set the image
             ImageView img=(ImageView)findViewById(R.id.imageView);
             String filename=mobile.toLowerCase();
             int imgId=getResources().getIdentifier(filename,"drawable",getPackageName());
